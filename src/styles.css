@@ -11,14 +11,31 @@ body {
   background: linear-gradient(to right, #00ff4c, #b700ff);
 }
 
+/* parent container  */
 .calculator-grid {
   display: grid;
+  justify-content: center;
   margin-top: 30px;
   /* changes the width of the column. 4 different columns w/ width of 100px each */
   grid-template-columns: repeat(4, 100px);
   /* changes the height of the row (boxes) 110px will be height of top row boxes  */
   /* we repeat the process with 5 more rows that are 90px in height each  */
   grid-template-rows: minmax(110px, auto) repeat(5, 90px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 30px;
+  border: 2px solid white;
+  /* An outline is a line drawn outside the element's border. Doesn't appear here */
+  /* outline: none; */
+  background-color: rgb(240, 248, 255, 0.5);
+}
+
+.calculator-grid > button:hover,
+/* focus will leave the box white after clicked */
+.calculator-grid > button:focus {
+  background-color: rgb(255, 255, 255, 0.95);
 }
 
 .span-two {
