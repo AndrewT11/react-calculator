@@ -1,3 +1,5 @@
+import "./styles.css";
+
 function App() {
   return (
     // will use CSS grid for complete calculator layout
