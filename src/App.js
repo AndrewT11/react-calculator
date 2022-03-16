@@ -5,8 +5,8 @@ function App() {
     // will use CSS grid for complete calculator layout
     <div className="calculator-grid">
       <div className="output">
-        <div className="previous-operand"></div>
-        <div className="current-operand"></div>
+        <div className="previous-operand">123456-</div>
+        <div className="current-operand">123</div>
       </div>
       <button className="span-two">AC</button>
       <button>DEL</button>
